@@ -12,6 +12,7 @@
 		96A51DD1198AD7930078DD64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A51DCF198AD7930078DD64 /* Main.storyboard */; };
 		96A51DD3198AD7930078DD64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A51DD2198AD7930078DD64 /* Images.xcassets */; };
 		96A51DDF198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DDE198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift */; };
+		96A51DEA198AE26B0078DD64 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DE9198AE26B0078DD64 /* Tile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		96A51DD8198AD7930078DD64 /* Swift Pirate AdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Pirate AdventureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A51DDD198AD7930078DD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A51DDE198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Pirate_AdventureTests.swift; sourceTree = "<group>"; };
+		96A51DE9198AE26B0078DD64 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		96A51DC8198AD7930078DD64 /* Swift Pirate Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				96A51DE8198AE2070078DD64 /* Model */,
 				96A51DCB198AD7930078DD64 /* AppDelegate.swift */,
 				96A51DCD198AD7930078DD64 /* ViewController.swift */,
 				96A51DCF198AD7930078DD64 /* Main.storyboard */,
@@ -107,6 +110,14 @@
 				96A51DDD198AD7930078DD64 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96A51DE8198AE2070078DD64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96A51DE9198AE26B0078DD64 /* Tile.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A51DEA198AE26B0078DD64 /* Tile.swift in Sources */,
 				96A51DCE198AD7930078DD64 /* ViewController.swift in Sources */,
 				96A51DCC198AD7930078DD64 /* AppDelegate.swift in Sources */,
 			);
