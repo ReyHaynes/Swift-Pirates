@@ -10,8 +10,8 @@ import UIKit
 
 class Tile: NSObject {
     
-    var story:String!
-    var backgroundImage:UIImage!
-    var actionButtonName:String!
+    var story:              String?
+    var backgroundImage:    UIImage?
+    var actionButtonName:   String?
    
 }
