@@ -98,6 +98,9 @@
                                             <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ho6-Ao-Th8"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actions" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uwL-zI-MSG">
                                         <rect key="frame" x="202" y="7" width="58" height="21"/>
@@ -131,44 +134,69 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ezZ-QN-XEc">
-                                <rect key="frame" x="227" y="437" width="30" height="30"/>
+                                <rect key="frame" x="227" y="436" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99257744049999996" green="1" blue="0.35859667979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="N">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="northButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hx-1C-2ng"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YXX-Nk-noM">
-                                <rect key="frame" x="270" y="476" width="30" height="30"/>
+                                <rect key="frame" x="266" y="476" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99257744049999996" green="1" blue="0.35859667979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="E">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="eastButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qww-AC-WSG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XSL-7f-nq0">
-                                <rect key="frame" x="181" y="476" width="30" height="30"/>
+                                <rect key="frame" x="186" y="476" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99257744049999996" green="1" blue="0.35859667979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="W">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="westButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o7O-aM-bz9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nD4-1z-GSc">
-                                <rect key="frame" x="227" y="517" width="30" height="30"/>
+                                <rect key="frame" x="227" y="515" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99257744049999996" green="1" blue="0.35859667979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="S">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="southButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z9q-0u-FIL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="kWH-sj-JEV" id="BG2-lZ-fDR"/>
+                        <outlet property="armorLabel" destination="Hzo-4n-2Ee" id="6Kg-oV-EoS"/>
+                        <outlet property="backgrandImageView" destination="XyK-z6-dOE" id="ldm-BC-75W"/>
+                        <outlet property="damageLabel" destination="Iez-IS-TyB" id="0ec-GR-WjT"/>
+                        <outlet property="eastButton" destination="YXX-Nk-noM" id="epG-Y1-yfO"/>
+                        <outlet property="healthLabel" destination="s1U-Lx-MnT" id="sQP-NJ-sx6"/>
+                        <outlet property="northButton" destination="ezZ-QN-XEc" id="nvL-bW-MnX"/>
+                        <outlet property="southButton" destination="nD4-1z-GSc" id="nfL-Tu-MwD"/>
+                        <outlet property="storyLabel" destination="qZb-Zc-WMF" id="uRP-3L-QWi"/>
+                        <outlet property="weaponLabel" destination="0I7-Nw-Wxh" id="1kN-TT-hZj"/>
+                        <outlet property="westButton" destination="XSL-7f-nq0" id="ilT-Mq-76c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
