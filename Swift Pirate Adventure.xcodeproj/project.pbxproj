@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96A51DCC198AD7930078DD64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DCB198AD7930078DD64 /* AppDelegate.swift */; };
+		96A51DCE198AD7930078DD64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DCD198AD7930078DD64 /* ViewController.swift */; };
+		96A51DD1198AD7930078DD64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A51DCF198AD7930078DD64 /* Main.storyboard */; };
+		96A51DD3198AD7930078DD64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A51DD2198AD7930078DD64 /* Images.xcassets */; };
+		96A51DDF198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DDE198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96A51DD9198AD7930078DD64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A51DBE198AD7930078DD64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A51DC5198AD7930078DD64;
+			remoteInfo = "Swift Pirate Adventure";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96A51DC6198AD7930078DD64 /* Swift Pirate Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Pirate Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A51DCA198AD7930078DD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A51DCB198AD7930078DD64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96A51DCD198AD7930078DD64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96A51DD0198AD7930078DD64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96A51DD2198AD7930078DD64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		96A51DD8198AD7930078DD64 /* Swift Pirate AdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Pirate AdventureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A51DDD198AD7930078DD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A51DDE198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Pirate_AdventureTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96A51DC3198AD7930078DD64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A51DD5198AD7930078DD64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96A51DBD198AD7930078DD64 = {
+			isa = PBXGroup;
+			children = (
+				96A51DC8198AD7930078DD64 /* Swift Pirate Adventure */,
+				96A51DDB198AD7930078DD64 /* Swift Pirate AdventureTests */,
+				96A51DC7198AD7930078DD64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96A51DC7198AD7930078DD64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96A51DC6198AD7930078DD64 /* Swift Pirate Adventure.app */,
+				96A51DD8198AD7930078DD64 /* Swift Pirate AdventureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96A51DC8198AD7930078DD64 /* Swift Pirate Adventure */ = {
+			isa = PBXGroup;
+			children = (
+				96A51DCB198AD7930078DD64 /* AppDelegate.swift */,
+				96A51DCD198AD7930078DD64 /* ViewController.swift */,
+				96A51DCF198AD7930078DD64 /* Main.storyboard */,
+				96A51DD2198AD7930078DD64 /* Images.xcassets */,
+				96A51DC9198AD7930078DD64 /* Supporting Files */,
+			);
+			path = "Swift Pirate Adventure";
+			sourceTree = "<group>";
+		};
+		96A51DC9198AD7930078DD64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96A51DCA198AD7930078DD64 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96A51DDB198AD7930078DD64 /* Swift Pirate AdventureTests */ = {
+			isa = PBXGroup;
+			children = (
+				96A51DDE198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift */,
+				96A51DDC198AD7930078DD64 /* Supporting Files */,
+			);
+			path = "Swift Pirate AdventureTests";
+			sourceTree = "<group>";
+		};
+		96A51DDC198AD7930078DD64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96A51DDD198AD7930078DD64 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96A51DC5198AD7930078DD64 /* Swift Pirate Adventure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A51DE2198AD7930078DD64 /* Build configuration list for PBXNativeTarget "Swift Pirate Adventure" */;
+			buildPhases = (
+				96A51DC2198AD7930078DD64 /* Sources */,
+				96A51DC3198AD7930078DD64 /* Frameworks */,
+				96A51DC4198AD7930078DD64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift Pirate Adventure";
+			productName = "Swift Pirate Adventure";
+			productReference = 96A51DC6198AD7930078DD64 /* Swift Pirate Adventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96A51DD7198AD7930078DD64 /* Swift Pirate AdventureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A51DE5198AD7930078DD64 /* Build configuration list for PBXNativeTarget "Swift Pirate AdventureTests" */;
+			buildPhases = (
+				96A51DD4198AD7930078DD64 /* Sources */,
+				96A51DD5198AD7930078DD64 /* Frameworks */,
+				96A51DD6198AD7930078DD64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96A51DDA198AD7930078DD64 /* PBXTargetDependency */,
+			);
+			name = "Swift Pirate AdventureTests";
+			productName = "Swift Pirate AdventureTests";
+			productReference = 96A51DD8198AD7930078DD64 /* Swift Pirate AdventureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96A51DBE198AD7930078DD64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Reinaldo Haynes";
+				TargetAttributes = {
+					96A51DC5198AD7930078DD64 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					96A51DD7198AD7930078DD64 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 96A51DC5198AD7930078DD64;
+					};
+				};
+			};
+			buildConfigurationList = 96A51DC1198AD7930078DD64 /* Build configuration list for PBXProject "Swift Pirate Adventure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96A51DBD198AD7930078DD64;
+			productRefGroup = 96A51DC7198AD7930078DD64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96A51DC5198AD7930078DD64 /* Swift Pirate Adventure */,
+				96A51DD7198AD7930078DD64 /* Swift Pirate AdventureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96A51DC4198AD7930078DD64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A51DD1198AD7930078DD64 /* Main.storyboard in Resources */,
+				96A51DD3198AD7930078DD64 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A51DD6198AD7930078DD64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96A51DC2198AD7930078DD64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A51DCE198AD7930078DD64 /* ViewController.swift in Sources */,
+				96A51DCC198AD7930078DD64 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A51DD4198AD7930078DD64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A51DDF198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96A51DDA198AD7930078DD64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96A51DC5198AD7930078DD64 /* Swift Pirate Adventure */;
+			targetProxy = 96A51DD9198AD7930078DD64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96A51DCF198AD7930078DD64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96A51DD0198AD7930078DD64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96A51DE0198AD7930078DD64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96A51DE1198AD7930078DD64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96A51DE3198AD7930078DD64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Swift Pirate Adventure/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		96A51DE4198AD7930078DD64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Swift Pirate Adventure/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		96A51DE6198AD7930078DD64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Swift Pirate Adventure.app/Swift Pirate Adventure";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Swift Pirate AdventureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		96A51DE7198AD7930078DD64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Swift Pirate Adventure.app/Swift Pirate Adventure";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Swift Pirate AdventureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96A51DC1198AD7930078DD64 /* Build configuration list for PBXProject "Swift Pirate Adventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A51DE0198AD7930078DD64 /* Debug */,
+				96A51DE1198AD7930078DD64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A51DE2198AD7930078DD64 /* Build configuration list for PBXNativeTarget "Swift Pirate Adventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A51DE3198AD7930078DD64 /* Debug */,
+				96A51DE4198AD7930078DD64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		96A51DE5198AD7930078DD64 /* Build configuration list for PBXNativeTarget "Swift Pirate AdventureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A51DE6198AD7930078DD64 /* Debug */,
+				96A51DE7198AD7930078DD64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96A51DBE198AD7930078DD64 /* Project object */;
+}
