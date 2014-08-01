@@ -9,17 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-                            
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    var currentPoint: CGPoint!
+    var tiles: [AnyObject]!
     
     @IBOutlet var backgrandImageView: UIImageView!
     
@@ -53,6 +45,24 @@ class ViewController: UIViewController {
     @IBAction func westButtonPressed(sender: UIButton) {
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        var factory = Factory()
+        self.tiles = factory.tiles()
+        self.currentPoint = CGPointMake(0, 0)
+        self.updateTile()
+    }
+    
+    func updateTile() {
+        var tileModel = tiles[Int(self.currentPoint.x)][Int(self.currentPoint.y)] as Tile
+        self.storyLabel.text = tileModel.story
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 
 }
 
