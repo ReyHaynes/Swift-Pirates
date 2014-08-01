@@ -45,6 +45,11 @@ class ViewController: UIViewController {
     @IBAction func westButtonPressed(sender: UIButton) {
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -54,15 +59,29 @@ class ViewController: UIViewController {
         self.updateTile()
     }
     
+    
+    // CUSTOM FUNCTIONS
+    func tileExistsAtPoint(point: CGPoint)->Bool {
+        if point.x >= 0 && point.y >= 0 && Int(point.x) < self.tiles.count && Int(point.y) < self.tiles[Int(point.x)].count {
+            return true
+        }
+        return false
+    }
+    
     func updateTile() {
         var tileModel = tiles[Int(self.currentPoint.x)][Int(self.currentPoint.y)] as Tile
         self.storyLabel.text = tileModel.story
+        self.updateButtons()
+    }
+    
+    func updateButtons() {
+        self.northButton.hidden     = !self.tileExistsAtPoint(CGPointMake(self.currentPoint.x, self.currentPoint.y + 1))
+        self.southButton.hidden     = !self.tileExistsAtPoint(CGPointMake(self.currentPoint.x, self.currentPoint.y - 1))
+        self.eastButton.hidden      = !self.tileExistsAtPoint(CGPointMake(self.currentPoint.x + 1, self.currentPoint.y))
+        self.westButton.hidden      = !self.tileExistsAtPoint(CGPointMake(self.currentPoint.x - 1, self.currentPoint.y))
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
 }
 
