@@ -34,15 +34,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func northButtonPressed(sender: UIButton) {
+        self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y + 1)
+        self.updateTile()
     }
     
     @IBAction func southButtonPressed(sender: UIButton) {
+        self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y - 1)
+        self.updateTile()
     }
     
     @IBAction func eastButtonPressed(sender: UIButton) {
+        self.currentPoint = CGPointMake(self.currentPoint.x + 1, self.currentPoint.y)
+        self.updateTile()
     }
     
     @IBAction func westButtonPressed(sender: UIButton) {
+        self.currentPoint = CGPointMake(self.currentPoint.x - 1, self.currentPoint.y)
+        self.updateTile()
     }
     
     override func didReceiveMemoryWarning() {
