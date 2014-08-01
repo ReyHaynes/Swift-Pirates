@@ -79,6 +79,7 @@ class ViewController: UIViewController {
     func updateTile() {
         var tileModel = tiles[Int(self.currentPoint.x)][Int(self.currentPoint.y)] as Tile
         self.storyLabel.text = tileModel.story
+        self.backgrandImageView.image = tileModel.backgroundImage
         self.updateButtons()
     }
     
