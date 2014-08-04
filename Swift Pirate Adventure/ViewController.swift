@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     var currentPoint: CGPoint!
     var tiles: [AnyObject]!
+    var character: CharacterModel!
     
     @IBOutlet var backgrandImageView: UIImageView!
     
@@ -63,6 +64,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         var factory = Factory()
         self.tiles = factory.tiles()
+        self.character = factory.character()
         self.currentPoint = CGPointMake(0, 0)
         self.updateTile()
     }
@@ -80,6 +82,10 @@ class ViewController: UIViewController {
         var tileModel = tiles[Int(self.currentPoint.x)][Int(self.currentPoint.y)] as TileModel
         self.storyLabel.text = tileModel.story
         self.backgrandImageView.image = tileModel.backgroundImage
+        self.healthLabel.text = "\(self.character.health!)"
+        self.damageLabel.text = "\(self.character.damage!)"
+        self.armorLabel.text = "\(self.character.armor!.name!)"
+        self.weaponLabel.text = "\(self.character.weapon!.name!)"
         self.updateButtons()
     }
     

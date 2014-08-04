@@ -1,5 +1,5 @@
 //
-//  Character.swift
+//  CharacterModel.swift
 //  Swift Pirate Adventure
 //
 //  Created by Reinaldo Haynes on 8/4/14.

@@ -85,6 +85,7 @@ class Factory: NSObject {
         weapon.damage = 10
         
         character.health = 100
+        character.damage = 0
         character.armor = armor
         character.weapon = weapon
         

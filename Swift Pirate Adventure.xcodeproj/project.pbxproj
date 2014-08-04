@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		339FE75E199035D60021DABF /* WeaponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FE75D199035D60021DABF /* WeaponModel.swift */; };
 		339FE760199036330021DABF /* ArmorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FE75F199036330021DABF /* ArmorModel.swift */; };
-		339FE763199039120021DABF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FE762199039120021DABF /* Character.swift */; };
+		339FE763199039120021DABF /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FE762199039120021DABF /* CharacterModel.swift */; };
 		96A51DCC198AD7930078DD64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DCB198AD7930078DD64 /* AppDelegate.swift */; };
 		96A51DCE198AD7930078DD64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DCD198AD7930078DD64 /* ViewController.swift */; };
 		96A51DD1198AD7930078DD64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A51DCF198AD7930078DD64 /* Main.storyboard */; };
@@ -44,7 +44,7 @@
 /* Begin PBXFileReference section */
 		339FE75D199035D60021DABF /* WeaponModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponModel.swift; sourceTree = "<group>"; };
 		339FE75F199036330021DABF /* ArmorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmorModel.swift; sourceTree = "<group>"; };
-		339FE762199039120021DABF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		339FE762199039120021DABF /* CharacterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		96A51DC6198AD7930078DD64 /* Swift Pirate Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Pirate Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A51DCA198AD7930078DD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A51DCB198AD7930078DD64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 				96A51DE9198AE26B0078DD64 /* TileModel.swift */,
 				339FE75D199035D60021DABF /* WeaponModel.swift */,
 				339FE75F199036330021DABF /* ArmorModel.swift */,
-				339FE762199039120021DABF /* Character.swift */,
+				339FE762199039120021DABF /* CharacterModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 			files = (
 				339FE75E199035D60021DABF /* WeaponModel.swift in Sources */,
 				96A51DEC198AE3EE0078DD64 /* Factory.swift in Sources */,
-				339FE763199039120021DABF /* Character.swift in Sources */,
+				339FE763199039120021DABF /* CharacterModel.swift in Sources */,
 				96A51DEA198AE26B0078DD64 /* TileModel.swift in Sources */,
 				339FE760199036330021DABF /* ArmorModel.swift in Sources */,
 				96A51DCE198AD7930078DD64 /* ViewController.swift in Sources */,
