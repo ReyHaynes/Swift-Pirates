@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TilesFactory: NSObject {
+class Factory: NSObject {
     
     func tiles()->[AnyObject] {
         
@@ -71,6 +71,24 @@ class TilesFactory: NSObject {
         var tiles = [column1, column2, column3, column4]
         
         return tiles
+    }
+    
+    func character()->CharacterModel {
+        var character = CharacterModel()
+        
+        var armor = ArmorModel()
+        armor.name = "Cloak"
+        armor.health = 5
+        
+        var weapon = WeaponModel()
+        weapon.name = "Fists"
+        weapon.damage = 10
+        
+        character.health = 100
+        character.armor = armor
+        character.weapon = weapon
+        
+        return character
     }
    
 }

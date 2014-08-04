@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Character: NSObject {
+class CharacterModel: NSObject {
     var weapon:     WeaponModel?
     var armor:      ArmorModel?
     var damage:     Int?

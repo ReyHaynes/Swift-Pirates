@@ -61,8 +61,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var tilesFactory = TilesFactory()
-        self.tiles = tilesFactory.tiles()
+        var factory = Factory()
+        self.tiles = factory.tiles()
         self.currentPoint = CGPointMake(0, 0)
         self.updateTile()
     }
