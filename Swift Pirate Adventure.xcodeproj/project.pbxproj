@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		339FE75E199035D60021DABF /* WeaponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FE75D199035D60021DABF /* WeaponModel.swift */; };
+		339FE760199036330021DABF /* ArmorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FE75F199036330021DABF /* ArmorModel.swift */; };
 		96A51DCC198AD7930078DD64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DCB198AD7930078DD64 /* AppDelegate.swift */; };
 		96A51DCE198AD7930078DD64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DCD198AD7930078DD64 /* ViewController.swift */; };
 		96A51DD1198AD7930078DD64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A51DCF198AD7930078DD64 /* Main.storyboard */; };
 		96A51DD3198AD7930078DD64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A51DD2198AD7930078DD64 /* Images.xcassets */; };
 		96A51DDF198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DDE198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift */; };
-		96A51DEA198AE26B0078DD64 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DE9198AE26B0078DD64 /* Tile.swift */; };
-		96A51DEC198AE3EE0078DD64 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DEB198AE3EE0078DD64 /* Factory.swift */; };
+		96A51DEA198AE26B0078DD64 /* TileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DE9198AE26B0078DD64 /* TileModel.swift */; };
+		96A51DEC198AE3EE0078DD64 /* TilesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A51DEB198AE3EE0078DD64 /* TilesFactory.swift */; };
 		96F3BDEC198BF25300DFA443 /* PirateAttack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96F3BDE0198BF25300DFA443 /* PirateAttack.jpg */; };
 		96F3BDED198BF25300DFA443 /* PirateBlacksmith.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96F3BDE1198BF25300DFA443 /* PirateBlacksmith.jpg */; };
 		96F3BDEE198BF25300DFA443 /* PirateBoss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96F3BDE2198BF25300DFA443 /* PirateBoss.jpg */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		339FE75D199035D60021DABF /* WeaponModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponModel.swift; sourceTree = "<group>"; };
+		339FE75F199036330021DABF /* ArmorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmorModel.swift; sourceTree = "<group>"; };
 		96A51DC6198AD7930078DD64 /* Swift Pirate Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Pirate Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A51DCA198AD7930078DD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A51DCB198AD7930078DD64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +52,8 @@
 		96A51DD8198AD7930078DD64 /* Swift Pirate AdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Pirate AdventureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A51DDD198AD7930078DD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A51DDE198AD7930078DD64 /* Swift_Pirate_AdventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Pirate_AdventureTests.swift; sourceTree = "<group>"; };
-		96A51DE9198AE26B0078DD64 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
-		96A51DEB198AE3EE0078DD64 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		96A51DE9198AE26B0078DD64 /* TileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileModel.swift; sourceTree = "<group>"; };
+		96A51DEB198AE3EE0078DD64 /* TilesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TilesFactory.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		96F3BDE0198BF25300DFA443 /* PirateAttack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateAttack.jpg; sourceTree = "<group>"; };
 		96F3BDE1198BF25300DFA443 /* PirateBlacksmith.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateBlacksmith.jpg; sourceTree = "<group>"; };
 		96F3BDE2198BF25300DFA443 /* PirateBoss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateBoss.jpg; sourceTree = "<group>"; };
@@ -82,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		339FE761199037400021DABF /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				96A51DEB198AE3EE0078DD64 /* TilesFactory.swift */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
 		96A51DBD198AD7930078DD64 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +115,7 @@
 		96A51DC8198AD7930078DD64 /* Swift Pirate Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				339FE761199037400021DABF /* Factory */,
 				96F3BDDF198BF22500DFA443 /* Images */,
 				96A51DE8198AE2070078DD64 /* Model */,
 				96A51DCB198AD7930078DD64 /* AppDelegate.swift */,
@@ -142,8 +155,9 @@
 		96A51DE8198AE2070078DD64 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				96A51DEB198AE3EE0078DD64 /* Factory.swift */,
-				96A51DE9198AE26B0078DD64 /* Tile.swift */,
+				96A51DE9198AE26B0078DD64 /* TileModel.swift */,
+				339FE75D199035D60021DABF /* WeaponModel.swift */,
+				339FE75F199036330021DABF /* ArmorModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -278,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A51DEC198AE3EE0078DD64 /* Factory.swift in Sources */,
-				96A51DEA198AE26B0078DD64 /* Tile.swift in Sources */,
+				339FE75E199035D60021DABF /* WeaponModel.swift in Sources */,
+				96A51DEC198AE3EE0078DD64 /* TilesFactory.swift in Sources */,
+				96A51DEA198AE26B0078DD64 /* TileModel.swift in Sources */,
+				339FE760199036330021DABF /* ArmorModel.swift in Sources */,
 				96A51DCE198AD7930078DD64 /* ViewController.swift in Sources */,
 				96A51DCC198AD7930078DD64 /* AppDelegate.swift in Sources */,
 			);

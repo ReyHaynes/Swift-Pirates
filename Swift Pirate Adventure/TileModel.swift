@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Tile: NSObject {
+class TileModel: NSObject {
     
     var story:              String?
     var backgroundImage:    UIImage?

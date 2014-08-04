@@ -61,8 +61,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var factory = Factory()
-        self.tiles = factory.tiles()
+        var tilesFactory = TilesFactory()
+        self.tiles = tilesFactory.tiles()
         self.currentPoint = CGPointMake(0, 0)
         self.updateTile()
     }
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
     }
     
     func updateTile() {
-        var tileModel = tiles[Int(self.currentPoint.x)][Int(self.currentPoint.y)] as Tile
+        var tileModel = tiles[Int(self.currentPoint.x)][Int(self.currentPoint.y)] as TileModel
         self.storyLabel.text = tileModel.story
         self.backgrandImageView.image = tileModel.backgroundImage
         self.updateButtons()
