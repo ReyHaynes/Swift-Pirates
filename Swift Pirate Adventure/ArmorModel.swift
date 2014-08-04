@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Armor: NSObject {
+class ArmorModel: NSObject {
     
     var name:       String?
     var health:     Int?

@@ -1,5 +1,5 @@
 //
-//  WeaponModel.swift
+//  Character.swift
 //  Swift Pirate Adventure
 //
 //  Created by Reinaldo Haynes on 8/4/14.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class WeaponModel: NSObject {
-    
-    var name:       String?
+class Character: NSObject {
+    var weapon:     WeaponModel?
+    var armor:      ArmorModel?
     var damage:     Int?
-
+    var health:     Int?
 }
