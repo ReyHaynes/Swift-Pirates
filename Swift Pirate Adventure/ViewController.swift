@@ -32,26 +32,33 @@ class ViewController: UIViewController {
     
     
     @IBAction func actionButtonPressed(sender: UIButton) {
+        var tile = self.tiles[Int(self.currentPoint.x)][Int(self.currentPoint.y)] as TileModel
+        self.updateCharacterStats(armor: tile.armor, weapon: tile.weapon, healthEffect: tile.healthEffect)
+        self.updateTile()
     }
     
     @IBAction func northButtonPressed(sender: UIButton) {
         self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y + 1)
         self.updateTile()
+        self.updateButtons()
     }
     
     @IBAction func southButtonPressed(sender: UIButton) {
         self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y - 1)
         self.updateTile()
+        self.updateButtons()
     }
     
     @IBAction func eastButtonPressed(sender: UIButton) {
         self.currentPoint = CGPointMake(self.currentPoint.x + 1, self.currentPoint.y)
         self.updateTile()
+        self.updateButtons()
     }
     
     @IBAction func westButtonPressed(sender: UIButton) {
         self.currentPoint = CGPointMake(self.currentPoint.x - 1, self.currentPoint.y)
         self.updateTile()
+        self.updateButtons()
     }
     
     override func didReceiveMemoryWarning() {
@@ -66,7 +73,9 @@ class ViewController: UIViewController {
         self.tiles = factory.tiles()
         self.character = factory.character()
         self.currentPoint = CGPointMake(0, 0)
+        self.updateCharacterStats(armor: nil, weapon: nil, healthEffect: nil)
         self.updateTile()
+        self.updateButtons()
     }
     
     
@@ -78,15 +87,36 @@ class ViewController: UIViewController {
         return false
     }
     
+    func updateCharacterStats(#armor: ArmorModel?, weapon: WeaponModel?, healthEffect: Int?) {
+        if armor != nil {
+            self.character.health = self.character.health! - self.character.armor!.health! + armor!.health!
+            self.character.armor = armor
+        }
+        else if weapon != nil {
+            self.character.damage = self.character.damage! - self.character.weapon!.damage! + weapon!.damage!
+            self.character.weapon = weapon
+        }
+        else if healthEffect != nil {
+            self.character.health = self.character.health! + healthEffect!
+        }
+        else {
+            self.character.health = self.character.health! + self.character.armor!.health!
+            self.character.damage = self.character.damage! + self.character.weapon!.damage!
+        }
+    }
+    
     func updateTile() {
-        var tileModel = tiles[Int(self.currentPoint.x)][Int(self.currentPoint.y)] as TileModel
+        var tileModel = self.tiles[Int(self.currentPoint.x)][Int(self.currentPoint.y)] as TileModel
+        
         self.storyLabel.text = tileModel.story
         self.backgrandImageView.image = tileModel.backgroundImage
+        
         self.healthLabel.text = "\(self.character.health!)"
         self.damageLabel.text = "\(self.character.damage!)"
         self.armorLabel.text = "\(self.character.armor!.name!)"
         self.weaponLabel.text = "\(self.character.weapon!.name!)"
-        self.updateButtons()
+        
+        self.actionButton.setTitle(tileModel.actionButtonName, forState: UIControlState.Normal)
     }
     
     func updateButtons() {

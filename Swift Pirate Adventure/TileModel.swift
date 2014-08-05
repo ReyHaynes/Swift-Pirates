@@ -13,5 +13,8 @@ class TileModel: NSObject {
     var story:              String?
     var backgroundImage:    UIImage?
     var actionButtonName:   String?
+    var weapon:             WeaponModel?
+    var armor:              ArmorModel?
+    var healthEffect:       Int?
    
 }
