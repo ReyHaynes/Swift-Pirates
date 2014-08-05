@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var currentPoint: CGPoint!
     var tiles: [AnyObject]!
     var character: CharacterModel!
+    var boss: BossModel!
     
     @IBOutlet var backgrandImageView: UIImageView!
     
@@ -30,11 +31,31 @@ class ViewController: UIViewController {
     @IBOutlet var westButton: UIButton!
     @IBOutlet var eastButton: UIButton!
     
+    //MARK: IBActions
     
     @IBAction func actionButtonPressed(sender: UIButton) {
         var tile = self.tiles[Int(self.currentPoint.x)][Int(self.currentPoint.y)] as TileModel
+        
+        if tile.healthEffect == -15 {
+            self.boss.health = self.boss.health! - self.character.damage!
+        }
         self.updateCharacterStats(armor: tile.armor, weapon: tile.weapon, healthEffect: tile.healthEffect)
+        
+        if self.character.health! <= 0 {
+            UIAlertView(title: "Death Notice", message: "You have died. Please restart the game.", delegate: nil, cancelButtonTitle: "Ok").show()
+        }
+        
+        if self.boss.health! <= 0 {
+            UIAlertView(title: "Victory Notice", message: "You have defeated the boss.", delegate: nil, cancelButtonTitle: "Ok").show()
+        }
+        
         self.updateTile()
+    }
+    
+    @IBAction func resetButtonPressed(sender: UIButton) {
+        self.character = nil
+        self.boss = nil
+        self.viewDidLoad()
     }
     
     @IBAction func northButtonPressed(sender: UIButton) {
@@ -61,6 +82,8 @@ class ViewController: UIViewController {
         self.updateButtons()
     }
     
+    //MARK: Overrides
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -72,6 +95,7 @@ class ViewController: UIViewController {
         var factory = Factory()
         self.tiles = factory.tiles()
         self.character = factory.character()
+        self.boss = factory.boss()
         self.currentPoint = CGPointMake(0, 0)
         self.updateCharacterStats(armor: nil, weapon: nil, healthEffect: nil)
         self.updateTile()
@@ -79,7 +103,7 @@ class ViewController: UIViewController {
     }
     
     
-    // CUSTOM FUNCTIONS
+    //MARK: Custom Functions
     func tileExistsAtPoint(point: CGPoint)->Bool {
         if point.x >= 0 && point.y >= 0 && Int(point.x) < self.tiles.count && Int(point.y) < self.tiles[Int(point.x)].count {
             return true
@@ -125,8 +149,5 @@ class ViewController: UIViewController {
         self.eastButton.hidden      = !self.tileExistsAtPoint(CGPointMake(self.currentPoint.x + 1, self.currentPoint.y))
         self.westButton.hidden      = !self.tileExistsAtPoint(CGPointMake(self.currentPoint.x - 1, self.currentPoint.y))
     }
-
-    
-
 }
 
